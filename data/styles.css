@@ -60,6 +60,8 @@ header h1 {
     padding-left: 20%;
     background-color: rgb(39, 45, 63);
     color: #f9f9f9;
+    z-index: -1;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -99,6 +101,7 @@ header h1 {
     color: rgb(48, 54, 71);
     user-select: none;
     pointer-events: none;
+    z-index: -1;
 }
 
 .featured-products {
@@ -152,7 +155,7 @@ header h1 {
     background-color: rgb(212, 164, 24);
 }
 
-.product-card:hover .product-info span {
+.product-card:hover .card-info span {
     color: white;
     background-color: rgb(23, 27, 38);
 }
@@ -262,6 +265,7 @@ footer {
     gap: 10px;
     padding: 20px 5%;
     font-size: 1rem;
+    border: solid 1px lightgray;
 }
 
 .breadcrumbs a {
@@ -276,4 +280,434 @@ footer {
 .breadcrumbs .current {
     color: #222;
     font-weight: 600;
+}
+
+.product-overview {
+    background-color: rgb(243, 244, 247);
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 1fr 1fr;
+    padding: 2.5% 5%;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5%;
+    margin-top: 2.5%;
+}
+
+.thumb-gallery img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-info h1 {
+    padding-right: 60%;
+    margin: 0;
+}
+
+.product-rating {
+    font-size: 0.8rem;
+    color: rgb(214, 164, 24);
+    margin: 0.5rem 0;
+}
+
+.product-price {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.product-description {
+    color: grey;
+}
+
+.add-to-cart legend {
+    margin: 1rem 0;
+}
+
+.size-selector, .color-selector {
+    border: none;
+    padding: 0;
+    margin: 0 0 25px;
+    min-width: 0;
+}
+
+.size-selector input,
+.color-selector input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+.size-selector .options,
+.color-selector .options {
+    display: flex;
+    gap: 16px
+}
+
+.size-selector span {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px grey;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    color: grey;
+}
+
+.size-selector input:checked + span {
+    background-color: grey;
+    color: black;
+    border-color: black;
+}
+
+.color-selector span {
+    display: block;
+    border: solid 1px grey;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.color-selector input:checked + span {
+    border: solid 2px black;
+}
+
+.swatch.cream {
+    background-color: rgb(236 230 216);
+}
+
+.swatch.grey {
+    background-color: rgb(57 61 69);
+}
+
+.swatch.navy {
+    background-color: rgb(30 43 70);
+}
+
+.swatch.orange {
+    background-color: rgb(189 97 31);
+}
+
+.quantity-selector {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.quantity-selector input {
+    margin: 16px 80% 16px 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+    /* height: 2.25rem; */
+    border: solid 1px grey;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-buttons button {
+    font-size: 1.125;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.action-buttons .add-to-cart-btn {
+    background-color: rgb(214, 164, 24);
+    border: none;
+}
+
+.action-buttons .add-to-wishlist-btn {
+    border: solid 1px grey;
+}
+
+.action-buttons .add-to-cart-btn:hover {
+    background-color: rgb(202, 186, 144)
+}
+
+.action-buttons .add-to-wishlist-btn:hover {
+    background-color: grey;
+    color: rgb(243, 244, 247);
+}
+
+.product-info-tabs {
+    margin: 2rem 5%;
+}
+
+.tabs-box {
+    display: flex;
+    gap: 3rem;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+    color: grey;
+}
+
+.tabs-box span {
+    padding: 1rem 0 0.5rem;
+}
+
+.description-tab {
+    display: block;
+    margin: 0;
+    border-bottom: solid 2px rgb(214, 164, 24);
+    color: black
+}
+
+.product-details {
+    padding-right: 51%;
+}
+
+.feature-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-table li {
+    display: flex;
+    gap: 0;
+    padding: 0.5rem 0;
+    border-bottom: solid 1px grey;
+    color: grey;
+}
+
+.feature-table li:last-child {
+    border-bottom: none;
+}
+
+.feature-table span {
+    display: block;
+    width: 50%;
+}
+
+.customer-reviews {
+    margin: 2rem 5%;
+    padding: 1rem;
+    border-top: solid 1px grey;
+}
+
+.review {
+    border-bottom: solid 1px grey;
+    padding: 1rem 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.review-name {
+    font-weight: bold;
+}
+
+.stars {
+    margin-left: 1rem;
+    font-size: 0.5rem;
+    color: rgb(214, 164, 24);
+}
+
+.review .date {
+    margin-left: auto;
+    color: grey;
+    font-size: 0.75rem;
+}
+
+.review p {
+    color: grey;
+}
+
+/* About page */
+.about-hero {
+    height: 40vh;
+}
+
+.our-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(219, 221, 227);
+    padding: 2% 5%;
+}
+
+.our-story h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.our-story p {
+    color: grey;
+}
+
+.our-values {
+    padding: 2% 0;
+    border-bottom: solid 1px grey;
+}
+
+.our-values h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.value-cards {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    margin: 2% 5%;
+}
+
+.card {
+    display: block;
+    padding: 2% 2%;
+    border: solid 1px grey;
+    background-color: rgb(219, 221, 227);
+}
+
+.card p {
+    color: grey;
+}
+
+.card .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(23, 27, 38);
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.quality-first .symbol {
+    color: rgb(214, 164, 24);
+}
+
+.sustainability  .symbol {
+    color: turquoise;
+}
+
+.innovation  .symbol {
+    color: white;
+}
+
+.meet-our-team {
+    padding: 2% 5%;
+    background-color: rgb(219, 221, 227);
+}
+
+.meet-our-team p {
+    color: grey;
+}
+
+.meet-our-team > p {
+    padding-right: 55%;
+    color: grey;
+}
+
+.team {
+    display: flex;
+    gap: 3em;
+    align-items: stretch;
+    margin-top: 2em;
+}
+
+.team div {
+    display: block;
+    flex: 1;
+}
+
+.team img {
+    display: block;
+    margin: 0;
+    background-color: white;
+
+    width: 100%;
+    object-fit: cover;
+}
+
+.meet-our-team h4 {
+    color: rgb(214, 164, 24);
+}
+
+.our-journey {
+    margin: 2em 5%;
+}
+
+.our-journey h2 {
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    border-left: solid 1px grey;
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.timeline li {
+    position: relative;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -1.9rem;
+    top: 1.5rem;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(206, 206, 5);
+    border-radius: 50%;
+}
+
+.timeline h4 {
+    color: rgb(34, 120, 111);
+}
+
+.timeline p {
+    color: grey;
+}
+
+.get-in-touch {
+    background-color: rgb(219, 221, 227)
+}
+
+.get-in-touch h2 {
+    padding: 2% 5% 2%;
+}
+
+.get-in-touch .boxes {
+    padding: 0 5% 2%;
+    display: flex;
+    gap: 3rem;
+}
+
+.boxes div {
+    background-color: white;
+    border: solid 1px grey;
+}
+
+.boxes p {
+    color: grey;
+    padding: 0 2rem;
+}
+
+.boxes h3 {
+    padding: 1rem 2rem;
 }

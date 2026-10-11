@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cable Knit Sweater</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab&display=swap" rel="stylesheet">
+
+
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2><span id="header-symbol">// </span>COMP3612 Assign 1</h2>
+        <nav class="header-buttons">
+            <a href="index.html">Home</a>
+            <a href="#">Shop</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Cart (0)</a>
+        </nav>
+    </header>
+
+    <nav class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>&gt;</span>
+        <a href="#">Products</a>
+        <span>&gt;</span>
+        <span class="current">Cable Knit Sweater</span>
+    </nav>
+
+    <section class="product-overview">
+        <div class="product-gallery">
+            <img class="main-image" src="images/003-medium-front.png" alt="Cable Knit Sweater Front">
+            <div class="thumb-gallery">
+                <img src="images/003-thumb-back.png" alt="back">
+                <img src="images/003-thumb-back-angle.png" alt="back angle">
+                <img src="images/003-thumb-front-angle.png" alt="front angle">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h1>Marino Wool Cable Knit Sweater</h1>
+            <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span>4.8/5 - 127 reviews</span>
+            </div>
+            <p class="product-price">$119.99</p>
+            <p class="product-description">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+            <form class="add-to-cart" action="https://www.randyconnolly.com/tests/process.php" method="POST">
+                <fieldset class="size-selector">
+                    <legend>Size:</legend>
+                    <div class="options">
+                        <label><input type="radio" name="size" value="xs"><span>XS</span></label>
+                        <label><input type="radio" name="size" value="s" checked><span>S</span></label>
+                        <label><input type="radio" name="size" value="m"><span>M</span></label>
+                        <label><input type="radio" name="size" value="l"><span>L</span></label>
+                        <label><input type="radio" name="size" value="xl"><span>XL</span></label>
+                        <label><input type="radio" name="size" value="xxl"><span>XXL</span></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="color-selector">
+                    <legend>Color:</legend>
+                    <div class="options">
+                        <label><input type="radio" name="color" value="cream"><span class="swatch cream"></span></label>
+                        <label><input type="radio" name="color" value="grey"><span class="swatch grey"></span></label>
+                        <label><input type="radio" name="color" value="navy" checked><span class="swatch navy"></span></label>
+                        <label><input type="radio" name="color" value="orange"><span class="swatch orange"></span></label>
+                    </div>
+                </fieldset>
+
+                <div class="quantity-selector">
+                    <label for="qty">Quantity:</label>
+                    <input type="number" id="qty" name="qty" value="1" min="1">
+                </div>
+
+                <div class="action-buttons">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                    <button type="button" class="add-to-wishlist-btn">Add to Wishlist</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="product-info-tabs">
+        <div class="tabs-box">
+            <span class="description-tab">Description</span>
+            <span class="specifications-tab">Specifications</span>
+            <span class="care-tab">Care Instructions</span>
+        </div>
+        <div class="product-details">
+            <h3>Product Details</h3>
+            <p class="product-description">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+            <div class="key-features">
+                <h4>Key Features:</h4>
+                <ul class="feature-table">
+                    <li class="material"><span>Material</span><span>100% premium marino wool</span></li>
+                    <li class="style"><span>Style</span><span>Classic cable knit pattern</span></li>
+                    <li class="closures"><span>Closures</span><span>Ribbed cuffs and hem</span></li>
+                    <li class="care"><span>Care</span><span>Dry clean recommended</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+            <div class="review-header">
+                <span class="review-name">Maria C.</span>
+                <span class="stars">★★★★★</span>
+                <span class="date">March 10, 2025</span>
+            </div>
+            <p>Absolutely stunning sweater! The merino wool is incredibly soft and the cable knit detail is beautiful. Worth the investment.</p>
+        </div>
+         <div class="review">
+            <div class="review-header">
+                <span class="review-name">Robert H.</span>
+                <span class="stars">★★★★☆</span>
+                <span class="date">March 5, 2025</span>
+            </div>
+            <p>Bought this for our lead software engineer and she loves it. High quality construction and the wool feels luxurious. Fits true to size.</p>
+        </div>
+         <div class="review">
+            <div class="review-header">
+                <span class="review-name">Nina F.</span>
+                <span class="stars">★★★☆☆</span>
+                <span class="date">February 28, 2025</span>
+            </div>
+            <p>Beautiful sweater but requires dry cleaning which is inconvenient. The quality is excellent though and it's very warm.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 COMP3612. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
