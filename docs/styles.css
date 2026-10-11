@@ -366,7 +366,7 @@ footer {
 }
 
 .size-selector input:checked + span {
-    background-color: grey;
+    background-color: rgb(219, 221, 227);
     color: black;
     border-color: black;
 }
@@ -695,6 +695,7 @@ footer {
 .get-in-touch .boxes {
     padding: 0 5% 2%;
     display: flex;
+    align-items: stretch;
     gap: 3rem;
 }
 
